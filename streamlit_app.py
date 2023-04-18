@@ -9,7 +9,7 @@ streamlit.text('Hard-Boiled Free-Range Egg')
 
 streamlit.header('Build Your Own Smoothie')
 
-import pandas
+import pandashttps://github.com/arabelladavey1/first_stemlit_app/blob/main/streamlit_app.py
 my_fruit_list = pandas.read_csv("https://uni-lab-files.s3.us-west-2.amazonaws.com/dabw/fruit_macros.txt")
 my_fruit_list = my_fruit_list.set_index('Fruit')
 
@@ -24,4 +24,4 @@ streamlit.header("Fruityvice Fruit Advice!")
 
 import requests
 fruityvice_response = requests.get("https://fruityvice.com/api/fruit/watermelon")
-streamlit.text(fruityvice_response)
+streamlit.text(fruityvice_response.json())
